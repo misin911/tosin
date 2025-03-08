@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 0.2fr 1.2fr 1.5fr 0.3fr;
+    grid-template-areas: 
+    "header header header header"
+    "aside one two three"
+    "aside four four four"
+    "aside footer footer footer";
+    grid-gap: 0.2rem;
+}
+
+
+header{
+    grid-area:header ;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside{
+    grid-area: aside;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one{
+    grid-area: one;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.two{
+    grid-area: two;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.three{
+    grid-area: three;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.four{
+    grid-area: four;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    grid-area: footer;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:550px){
+.container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 1.2fr 1.2fr 1.2fr 2.2fr 1fr;
+    grid-template-areas: 
+    "header"
+    "aside"
+    "one"
+    "two"
+    "three"
+    "four"
+    "footer";
+}
+}

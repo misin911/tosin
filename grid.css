@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+      width:90%;
+ max-width: 1440px;
+background-color: blueviolet;
+margin: 100px auto;
+display: flex;
+flex-wrap: wrap;
+}
+.card-1{
+    min-width: 300px;
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px
+}
+
+.card{
+    min-width: 300px;
+    height: 100px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1
+}

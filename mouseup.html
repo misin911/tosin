@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <textarea name="textarea" id="mytext" col="30" row="10"></textarea>
+    <p>keypress value: <span id="demo"></span></p>
+
+    <h1>Form Event</h1>
+
+    <select name="dropdown" id="select">
+      <option value="name">name</option>
+      <option value="trigger">trigger</option>
+      <option value="industry">industry</option>
+    </select>
+    <p>value of option:<span id="value"></span></p>
+
+    <h1>input event</h1>
+    <label for="Enter Your Name" id="myLabel">Enter Your Name:</label><br />
+    <input type="text" id="myText" /><br />
+    <button id="myButton">Submmit</button>
+    <script>
+      const myText = document.getElementById("mytext");
+      myText.addEventListener("keypress", () => {
+        document.getElementById("demo").innerHTML = mytext.value;
+      });
+
+      const select = document.getElementById("select");
+      select.addEventListener("change", () => {
+        document.getElementById("value").textContent = select.value =
+          "This is the value";
+      });
+
+      document.getElementById("myButton").onclick = function () {
+        username = document.getElementById("myText").value;
+        document.getElementById("myLabel").innerHTML = username;
+      };
+    </script>
+  </body>
+</html>

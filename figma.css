@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.text-center{
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.fa-circle{
+    color:blue;
+margin-top: 10px;
+font-size: large;
+}
+
+.circle{
+    display:flex
+}
+
+.my-two{
+    
+    display: flex;
+}
+
+.bg-blue{
+    background-color:blue ;
+    border-radius: 50px;
+}
